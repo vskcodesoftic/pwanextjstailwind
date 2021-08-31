@@ -30,18 +30,17 @@ export default function Home({posts}) {
            {/* card start  */}
          {data.map((d , indx) => {
            return (
-            <div key={indx} className="min-h-screen flex items-center justify-center">
+            <div key={indx} className="min-h-screen flex items-center justify-center p-2">
             <div className="w-80 bg-white rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
               <div className="flex items-center mb-2 space-x-4">
-                <img className="w-10 rounded-full ml-2" src="https://www.adobe.com/express/create/media_1bcd514348a568faed99e65f5249895e38b06c947.jpeg?width=2000&format=webply&optimize=medium" alt="David" />
                 <div>
                   <h1 className="mb-1 text-xl font-bold text-gray-700">{d.title}</h1>
                   <p className="text-sm font-normal text-gray-600 mr-14 hover:underline">#{d.author}</p>
                 </div>
   
               </div>
-              <img src={d.urlToImage} alt="" />
-              <div className="flex justify-between px-10 py-6">
+              {/* <img src={d.urlToImage}  /> */}
+              <div className="flex justify-between px-10 py-6 ">
                 <span
                   ><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"  /></svg
