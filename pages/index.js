@@ -26,9 +26,9 @@ export default function Home({posts}) {
         <h1 className="text-2xl flex justify-center text-amber-300">
           Welcome to News Test Pwa App 
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 grid-rows  p-2">
+        <div className="grid md:grid-cols-3 grid-cols-1 grid-rows  p-2">
            {/* card start  */}
-         {Data.map((d , indx) => {
+         {data.map((d , indx) => {
            return (
             <div key={indx} className="min-h-screen flex items-center justify-center">
             <div className="w-80 bg-white rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
