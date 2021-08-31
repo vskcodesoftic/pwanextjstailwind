@@ -39,7 +39,7 @@ export default function Home({posts}) {
                 </div>
   
               </div>
-              {/* <img src={d.urlToImage}  /> */}
+              <img src={d.urlToImage}  />
               <div className="flex justify-between px-10 py-6 ">
                 <span
                   ><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" viewBox="0 0 20 20" fill="currentColor">
