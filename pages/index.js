@@ -26,9 +26,9 @@ export default function Home({posts}) {
         <h1 className="text-2xl flex justify-center text-amber-300">
           Welcome to News Test Pwa App 
         </h1>
-        <div className="grid grid-cols-3 grid-rows  p-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 grid-rows  p-2">
            {/* card start  */}
-         {data.map((d , indx) => {
+         {Data.map((d , indx) => {
            return (
             <div key={indx} className="min-h-screen flex items-center justify-center">
             <div className="w-80 bg-white rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
@@ -44,7 +44,7 @@ export default function Home({posts}) {
               <div className="flex justify-between px-10 py-6">
                 <span
                   ><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" /></svg
+                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"  /></svg
                 ></span>
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,7 +54,7 @@ export default function Home({posts}) {
                 <span
                   ><a href={d.url}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"  /></svg></a>
                 </span>
               </div>
             
